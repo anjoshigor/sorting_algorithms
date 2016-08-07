@@ -3,6 +3,7 @@
 
 /**ALGORITHMS**/
 void insertion (int vet[], int n);
+void selection (int vet[], int n);
 
 /**TEST ASSETS**/
 bool equal(int lhs[], int rhs[], int n);
