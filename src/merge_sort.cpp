@@ -9,11 +9,11 @@ void merge(int vet[], int left[], int n1, int right[], int n2){
       vet[k++] = left[i++];
     else
       vet[k++] = right[j++];
+
   }
 
 	while(i < n1)
     vet[k++] = left[i++];
-
   while(j < n2)
     vet[k++] = right[j++];
 
@@ -38,8 +38,8 @@ void merge_sort(int vet[], int n) {
   /**Dividing the sub-arrays**/
 
 
-    merge_sort(left,mid);
-    merge_sort(right,n-mid);
+    merge_sort(left,mid); //the left sub-array
+    merge_sort(right,n-mid); //the right sub-array
     merge(vet,left,mid,right,n-mid);
 
 }
