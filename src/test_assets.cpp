@@ -48,3 +48,28 @@ void random_vector(int* vet, int n){
   }
 
 }
+
+void switch_algorithm(int vet[], int n, int opt){
+  switch (opt) {
+    case 1:
+    insertion(vet,n);
+    break;
+
+    case 2:
+    selection(vet,n);
+    break;
+
+    case 3:
+    merge_sort(vet,n);
+    break;
+
+    default:
+    case 4:
+    quicksort(vet,n);
+    break;
+
+    case 5:
+    heap_sort(vet,n);
+    break;
+  }
+}

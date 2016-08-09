@@ -5,7 +5,7 @@
 
 int main(int argc, char const *argv[]) {
 
-  std::cout << "=========\nWelcome to sortig deck test: \n press 1 to manually create a vector\n press 2 to create a random vector\n=========" << std::endl;
+  std::cout << "=========\n= Welcome to sortig deck test: \n= press 1 to manually create a vector\n= press 2 to create a random vector\n=========" << std::endl;
   int opt;
   std::cout << "[sorting_deck] >>: ";
   std::cin >> opt;
@@ -22,32 +22,11 @@ int main(int argc, char const *argv[]) {
       vector[i]=v;
     }
 
-  std::cout << "Choose an algorithm: \n1) Insertion \t 2) Selection\n3) Merge \t 4) Quick \t 5) Heap" << std::endl;
+  std::cout << "=========\n= Choose an algorithm: \n= 1) Insertion \t 2) Selection\n= 3) Merge \t 4) Quick \t 5) Heap\n========" << std::endl;
   std::cout << "[sorting_deck] >>: ";
   std::cin >> opt;
 
-  switch (opt) {
-    case 1:
-    insertion(vector,n);
-    break;
-
-    case 2:
-    selection(vector,n);
-    break;
-
-    case 3:
-    merge_sort(vector,n);
-    break;
-
-    default:
-    case 4:
-    quicksort(vector,n);
-    break;
-
-    case 5:
-    heap_sort(vector,n);
-    break;
-  }
+  switch_algorithm(vector, n, opt);
 
   std::cout << "Output" << std::endl;
   print(vector,n);
@@ -63,29 +42,7 @@ int main(int argc, char const *argv[]) {
     std::cout << "[sorting_deck] >>: ";
     std::cin >> opt;
 
-    switch (opt) {
-      case 1:
-      insertion(vector,n);
-      break;
-
-      case 2:
-      selection(vector,n);
-      break;
-
-      case 3:
-      merge_sort(vector,n);
-      break;
-
-      default:
-      case 4:
-      quicksort(vector,n);
-      break;
-
-      case 5:
-      heap_sort(vector,n);
-      break;
-    }
-
+    switch_algorithm(vector, n, opt);
 
       std::cout << "Output" << std::endl;
       print(vector,n);
