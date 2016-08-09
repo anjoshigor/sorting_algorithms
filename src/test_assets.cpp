@@ -1,4 +1,4 @@
-#include "../sorting_deck.h"
+#include "../sorting_deck.hpp"
 #include <iostream>
 
 bool equal(int lhs[], int rhs[], int n){
@@ -38,4 +38,13 @@ void print(int vet[], int n){
     std::cout << vet[i] << " ";
   }
    std::cout<<std::endl;
+}
+
+void random_vector(int* vet, int n){
+  srand(time(NULL));
+
+  for (int i = 0; i < n; i++) {
+    vet[i] = rand() % 10000;
+  }
+
 }

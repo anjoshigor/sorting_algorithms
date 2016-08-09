@@ -1,4 +1,4 @@
-#include "../sorting_deck.h"
+#include "../sorting_deck.hpp"
 
 void insertion (int vet[], int n){
   int i, j;

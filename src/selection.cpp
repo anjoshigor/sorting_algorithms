@@ -1,4 +1,4 @@
-#include "../sorting_deck.h"
+#include "../sorting_deck.hpp"
 
 void selection (int vet[], int n){
   int i, j, min;

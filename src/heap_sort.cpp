@@ -1,4 +1,4 @@
-#include "../sorting_deck.h"
+#include "../sorting_deck.hpp"
 #include <utility>
 
 void max_heapify(int vet[], int n, int i){

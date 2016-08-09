@@ -1,4 +1,4 @@
-#include "../sorting_deck.h"
+#include "../sorting_deck.hpp"
 #include <utility>
 
 int partition(int vet[], int p, int r){

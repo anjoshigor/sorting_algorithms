@@ -13,5 +13,6 @@ bool equal(int lhs[], int rhs[], int n);
 bool is_max_heap(int vet[], int n);
 void print(int vet[], int n);
 bool is_sorted(int vet[], int n);
+void random_vector(int* vet, int n);
 
 #endif

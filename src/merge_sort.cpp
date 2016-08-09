@@ -1,4 +1,4 @@
-#include "../sorting_deck.h"
+#include "../sorting_deck.hpp"
 #include <iostream>
 void merge(int vet[], int left[], int n1, int right[], int n2){
 
